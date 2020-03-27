@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
+// JSX: é HTML escrito dentro de um arquivo JS. (JavaScript XML)
+// Lifereload: atualizar a página de forma automática
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          OmniStack Week 11.0
-        </p>
-        <a
-          className="App-link"
-          href="https://rocketseat.com.br/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          RocketSeat  
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <Routes />
+    )
+
 }
 
 export default App;
